@@ -1,45 +1,273 @@
----
-layout: page
-css: ["index.css"]
-ref: project
-title: Projekte
-lang: de
----
-<p>Hier sind einige Projekte, wo ich im Laufe meiner Karrier tätig war:</p>
-<br>
+<!DOCTYPE html>
+<html lang="en">
 
-<p><img class="alignnone  wp-image-485" src="https://ygladkov.files.wordpress.com/2018/05/ewe.png" alt="ewe" width="160" height="57" /></p>
-<p><strong>Kunde</strong>:  EWE - Energieversorgung Norddeustchlands</p>
-<p><strong>Ort</strong>:  Hamburg, Deutschland</p>
-<p><strong>Industriesektor</strong>:  Energie</p>
-<p><strong>Projektkategorie</strong>: data analytics</p>
-<p><strong>Projekt</strong>: Überprüfung der Konzessionsabgabenverrechnung nach dem KAV-Gesetz</p>
-<p><strong>Beschreibung</strong>Konzessionsabgaben werden vom Stromversorger an die Gemeinden für das Recht gezahlt, öffentliche Infrastruktur für den Betrieb der Pipelines zur direkten Versorgung mit Strom und Gas zu nutzen. Sie werden jährlich nach den gesetzlichen Bestimmungen berechnet. </p>
-<p><strong>Werkzeuge</strong>: SAP, MS SQL Server, SSDT, SSAS</p>
+<head>
+    <meta charset="utf-8">
+    <title>Guitar Pro tab with AlphaTab</title>
 
-<p><img class="alignnone size-full wp-image-488" src="https://ygladkov.files.wordpress.com/2018/05/bnp_paribas.png" alt="bnp_paribas" width="160" height="57" /></p>
-<p><strong>Kunde</strong>:  BGL-BNP Paribas</p>
-<p><strong>Ort</strong>:  Luxemburg, Luxemburg</p>
-<p><strong>Industriesektor</strong>:  Bank & Finanzdienst</p>
-<p><strong>Projektkategorie</strong>: test management</p>
-<p><strong>Projekt</strong>: Testverwaltung und die Kontrolle des Testablaufs</p>
-<p><strong>Beschreibung</strong>Nach der Fusion von BGL und BNP Paribas wurden viele Banksysteme migriert / fusioniert / neu abgeordnet. Ich habe die Planning-Meetings mit dem Testing-Team durchgeführt, ihre tägliche Testaktivitäten überwacht und eingeschätzt, Performances, tägliche Testergebnisse evaluiert. </p>
-<p><strong>Werkzeuge</strong>: HP Quality Center, Excel, MS Sharepoint</p>
+    <!-- Including alphaTab -->
+    <script type="text/javascript" src="js/AlphaTab.js"></script>
 
-<p><img class="alignnone size-full wp-image-489" src="https://ygladkov.files.wordpress.com/2018/05/wbg_horizontal-rgb-high.png" alt="WBG_Horizontal-RGB-high" width="160" height="57" /></p>
-<p><strong>Kunde</strong>:  Sybase, World Bank group und statistisches Ministerium von der Ukraine</p>
-<p><strong>Ort</strong>:  Kiew, Ukraine</p>
-<p><strong>Industriesektor</strong>:  Statistics & Data</p>
-<p><strong>Projektkategorie</strong>: test management und QA Team Leading</p>
-<p><strong>Projekt</strong>: Testing</p>
-<p><strong>Beschreibung</strong>Organisation und Überwachung von QA-Prozessen (Agile-Methodik mit 2-Wochigen Sprints). Teamführung (4 Personen) und Zusammenarbeit mit Business Analytikern und Entwicklungsteam. Sicherstellung der Testprozesse und Kontrolle, dass alle Businessanforderungen in Testfälle übersetzt werden. Überwachung des gesamten Softwareentwicklungslebenszyklus von der Projektinitiierung bis zur Unterstützung der Produktion. Rechtzeitige Eskalation wichtiger Probleme und Bereitstellung von Führung und Anleitung für Kunden </p>
-<p><strong>Werkzeuge</strong>: HP Quality Center, MS Sharepoint, Excel, Selenium</p>
+    <!-- jQuery Plugin -->
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.alphaTab.js"></script>
 
-<p><img class="alignnone size-full wp-image-491" src="https://ygladkov.files.wordpress.com/2018/05/2000px-ibm_logo-svg.png" alt="2000px-IBM_logo.svg" width="160" height="57" /></p>
-<p><strong>Kunde</strong>:  IBM</p>
-<p><strong>Ort</strong>:  Dublin, Irland</p>
-<p><strong>Industriesektor</strong>:  IT</p>
-<p><strong>Projektkategorie</strong>: Testing & QA</p>
-<p><strong>Projekt</strong>: DB2 DW Integration und Leistungstests</p>
-<p><strong>Beschreibung</strong>: Systemintegrationstests für IBM DB2 Balanced Warehouse-Lösung unter Linux, Unix und Windows. Cluster-Tests auf IBM Smart Analytics-Systemen (5600/5600 V1 / 7600/7700). SVT- und Leistungstests für IBM SolidDB (In-Memory). DB2 9.7 / 9.8 QA- und Leistungstests für mittlere und große Datenbanken unter Linux, AIX und Windows mithilfe von Automatisierungsskripten. HA- und Failover-Szenarien, Fehlerprotokollierung und Berichterstellung. Zusammenarbeit mit Entwicklern / Testern in Toronto / Bangalore. Verwenden Sie IBM Rational ClearCase für die Versionsverwaltung, IBM Ration ClearQuest für die Problemberichterstellung.</p>
-<p><strong>Werkzeuge</strong>: IBM Smart Analytics Systems (5600/5600 V1/7600/7700), DB2 V 9.7/9.8, Enterprise Linux (SUSE/Redhat), IBM AIX V6/V7, IBM Rational ClearCase for versioning, IBM Rational ClearQuest, perl/bash automation scripts</p>
+    <!-- Including alphaSynth -->
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript" src="js/AlphaSynth.js"></script>
+
+    <!-- alphaSynth Plugin -->
+    <script type="text/javascript" src="js/jquery.alphaTab.alphaSynth.js"></script>
+
+    <!-- Styles used during the reproduction of the MIDI melody -->
+    <style type="text/css">
+        .barCursor {
+            opacity: 0.15;
+            background: #FFF200;
+        }
+        
+        .beatCursor {
+            opacity: 0.75;
+            background: #0078ff;
+        }
+        
+        .selectionWrapper div {
+            opacity: 0.1;
+            background: #4040FF;
+        }
+        
+        .atHighlight * {
+            fill: #0078ff;
+        }
+        
+        .alphaTabSurface {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            background: #FFF;
+            border-radius: 3px;
+        }
+        
+        #alphaTab {
+            width: 95%;
+            display: block;
+            margin: auto;
+        }
+        
+        #wrapper {
+            position: absolute;
+            top: 100px;
+            background: blue;
+            height: 600px;
+            width: 80%;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- START CONTROLS AND INFORMATION -->
+    <div>
+        <div style="display: inline-block; margin: 1em;">
+            <!-- The action button to play or pause the tab -->
+            <input type="button" id="playPause" value="Loading ... " disabled="disabled" />
+            <input type="button" id="stopBtn" value="Stop" disabled="disabled" />
+        </div>
+        <div style="display: inline-block; margin: 1em;">
+            <!-- The basic information of the gp file will be shown here -->
+            <div id="file-info"></div>
+        </div>
+        <div style="display: inline-block;margin: 1em;">
+            <!-- The track filter will be rendered in this div-->
+            <div id="trackList"></div>
+        </div>
+    </div>
+    <!-- END CONTROLS AND INFORMATION -->
+
+
+    <!-- START DYNAMIC MUSIC SHEET -->
+
+    <!-- 
+        The data-tracks defines which track of the gp file should be initially used 
+        Note: change the data-file property according to the URL of your guitar tab file
+    -->
+    <div id="alphaTab" data-file="files/guns_november_rain.gp3" data-tracks="0">
+        <!-- This loading div is removed once the gp file is loaded -->
+        <div id="loading-div">
+            Loading ...
+        </div>
+    </div>
+
+    <!-- END DYNAMIC MUSIC SHEET -->
+
+    <script> 
+        var playerReady = false;
+        var playerState = 0;
+        var at = $('#alphaTab');
+
+    
+        // 1. Register resize event 
+        // we do this before initializing to receive the initial resize event
+        $(at).on('resize', function (e) {
+            var info = e.originalEvent.detail;
+            var newSize = info.NewWidth;
+
+            if (newSize < 700) {
+                console.log(info.NewWidth, 'horizontal');
+                info.Settings.Layout.Mode = "horizontal";
+            } else {
+                console.log(info.NewWidth, 'page');
+                info.Settings.Layout.Mode = "page";
+                delete info.Settings.Layout.AdditionalSettings['barsPerRow'];
+            }
+        });
+
+        //
+        // 2. Load alphaTab
+        at.alphaTab({
+            width: -1, // negative width enables auto sizing
+            useWorker: true
+        });
+
+        //
+        // 1. Initialize track selector
+        // Note that in this example we allow to render multiple tracks in the view
+        // You can simply create a select box that displays only 1 track at time
+        var tracks = [];
+        at.on('loaded', function (e) {
+            var score = e.originalEvent.detail;
+            var trackList = $('#trackList');
+            trackList.empty();
+
+            // Loop through the tracks of the file and add the tracks filter
+            for (var i = 0; i < score.Tracks.length; i++) {
+                // build list item for track
+                var li = $('<li></li>');
+                var a = $('<a href="#"></a>')
+                    .data('track', score.Tracks[i].Index)
+                    .append('<input type="checkbox" />')
+                    .append(score.Tracks[i].Name)
+
+                    // here we build the new track list and render it
+                    .on('click', function (e) {
+                        var track = $(this).data('track');
+                        var index = tracks.indexOf(track);
+                        if (index > -1) {
+                            tracks.splice(index, 1);
+                            $(this).find('input').prop('checked', false);
+                        } else {
+                            tracks.push(track);
+                            tracks.sort(),
+                                $(this).find('input').prop('checked', true);
+                        }
+
+                        // render new tracks
+                        at.alphaTab('tracks', tracks);
+
+                        $(e.target).blur();
+
+                        return false;
+                    });
+
+                li.append(a);
+
+                trackList.append(li);
+            }
+
+
+            // Add only the name of the tracks for information: 
+            
+            var info = jQuery('#file-info');
+            info.html('');
+            info.append('<p><b>Title:</b> ' + score.Title + '</p>');
+            info.append('<p><b>Subtitle:</b> ' + score.Subtitle + '</p>');
+            info.append('<p><b>Album:</b> ' + score.Album + '</p>');
+            info.append('<p><b>Tempo:</b> ' + score.Tempo + '</p>');
+            info.append('<p><b>Bars:</b> ' + score.MasterBars.length + '</p>');
+            info.append('<p><b>Tracks:</b> (' + score.Tracks.length + ')</p>');
+            var tracksHTML = $('<ul></ul>');
+
+            for (var i = 0; i < score.Tracks.length; i++) {
+                tracksHTML.append('<li> (#' + i + ') ' + score.Tracks[i].Name + '</li>');
+            }
+
+            info.append(tracksHTML);
+
+            $("#loading-div").remove();
+        });
+
+
+        // 3. Initialize Player and Setup Player UI
+        var as = at.alphaTab('playerInit'); // init alphaSynth
+
+        as.On('ready', function (r) {
+            // Load sound data (used to play sound, not the song itself)
+            as.LoadSoundFontUrl('files/default.sf2');
+        });
+
+
+
+        as.On('soundFontLoad', function (loaded, full) {
+            var percentage = ((loaded / full) * 100) | 0;
+
+            console.log("Percentage sound loaded ", percentage + '%');
+        });
+
+
+        as.On('soundFontLoaded', function () {
+            console.log("The sound source has been loaded");
+        });
+
+
+        as.On('readyForPlay', function (r) {
+            playerReady = r;
+            updateControls();
+        });
+
+        as.On('playerStateChanged', function (s) {
+            playerState = s;
+            updateControls();
+        });
+
+        $('#playPause').click(function () {
+            if (playerState == 1) {
+                as.Pause();
+            } else {
+                as.Play();
+            }
+        });
+
+        $("#stopBtn").click(function () {
+            as.Stop();
+            // Disable stop btn
+            $(this).attr("disabled", "disabled");
+        });
+
+        function updateControls() {
+            if (playerReady) {
+                $('#playPause').prop('disabled', false);
+                $('#playPause').removeAttr('disabled');
+
+                switch (playerState) {
+                    case 0: // stopped
+                        $("#playPause").val("Play");
+                        break;
+
+                    case 1: // playing
+                        $("#playPause").val("Pause");
+                        $('#stopBtn').removeAttr('disabled').removeClass('disabled');
+                        break;
+
+                    case 2: // paused
+                        $("#playPause").val("Play");
+                        $('#stopBtn').removeAttr('disabled').removeClass('disabled');
+                        break;
+                }
+            }
+        }
+
+        // 3. Add cursors (optional, displays the current position of the playback etc)
+        at.alphaTab('playerCursor');
+         
+    </script>
+</body>
+
+</html>
