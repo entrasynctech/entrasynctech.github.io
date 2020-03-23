@@ -28,12 +28,6 @@ defaults:
       path: ""
     values:
       lang: "fr"
-title:
-  fr: "Site personelle de Yuri Gladkov"
-  en: "Personal site of Yuri Gladkov"  
-theme: academic    
-
-
 title: Personal site of Yuri Gladkov
 author: cyberglad
 email: cyberglad@gmail.com
@@ -88,3 +82,4 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
+=======
