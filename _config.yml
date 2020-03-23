@@ -12,16 +12,16 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Adam Denisov
-  tagline: Developer. Designer
+  name: Yuri Gladkov
+  tagline: Senior Java Developer (Fullstack)
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
+    twitter: cyberglad
     github:  thelehhman
-    linkedIn: in/thelehhman
+    linkedIn: in/yuri-gladkov/
     rss: rss
     # dribbble: jekyll
     # facebook: jekyll
@@ -45,8 +45,8 @@ plainwhite:
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
-#header_pages:
-# - about.md
+header_pages:
+ - about.md
 
 # Build settings
 theme: plainwhite
