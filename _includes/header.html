@@ -1,135 +1,35 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>
-      {% if page.title %}
-      {{ page.title | escape }}
-      {% else %}
-      {{ site.title | escape }}
-      {% endif %}
-    </title>
-    <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/res/favicon.ico">
-    <link rel="stylesheet" href="/assets/css/materialize.min.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/main.8eb72517.css">
-    <script type="text/javascript" src="/assets/js/main.b9b80f05.js"></script>
-    {% for css in layout.css %}
-    {% if css contains "//" %}
-    <link rel="stylesheet" href="{{css}}">
-    {% else %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}">
-    {% endif %}
-    {% endfor %}
-    {% for css in page.css %}
-    {% if css contains "//" %}
-    <link rel="stylesheet" href="{{css}}">
-    {% else %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{css}}">
-    {% endif %}
-    {% endfor %}
-    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/syntax.css">
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{site.baseurl}}/feed.xml">
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{site.baseurl}}/sitemap.xml">
-    {% seo title=false %}
-  </head>
-  <body>
-    <header>
-      <nav class="top-nav teal">
-		   
-        <div class="nav-wrapper">
-          <div class="container"> 
-	 
-  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-  <a href="{{ pages[1].url | prepend: site.baseurl }}" class="{{ pages[1].lang }}">{{ pages[1].lang }}</a>  
-  <a href="{{ pages[0].url | prepend: site.baseurl }}" class="{{ pages[0].lang }}">{{ pages[0].lang }}</a>  
-  <a href="{{ pages[3].url | prepend: site.baseurl }}" class="{{ pages[3].lang }}">{{ pages[3].lang }}</a>  
-   <a href="{{ pages[4].url | prepend: site.baseurl }}" class="{{ pages[4].lang }}">{{ pages[4].lang }}</a> 
-  <a href="{{ pages[2].url | prepend: site.baseurl }}" class="{{ pages[2].lang }}">{{ pages[2].lang }}</a>  
+<header class="site-header" role="banner">
 
- 
-  <a href="{{ pages[5].url | prepend: site.baseurl }}" class="{{ pages[5].lang }}">{{ pages[5].lang }}</a> 
-   <a href="{{ pages[6].url | prepend: site.baseurl }}" class="{{ pages[6].lang }}">{{ pages[6].lang }}</a> 
-          </div>
-          
-         
-         
-        </div>
-      </nav>
-      <div class="container">
-        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only">
-          <i class="material-icons">menu</i>
-        </a>
+  <div class="wrapper">
+
+    <div class="site-header-float">
+    {% include _i18n/sitetitle.html class=true %}
+    {% if site.pitch %}
+      <span class="site-pitch">{% include _i18n/i18n.html value=site.pitch %}</span>
+    {% endif %}
+
+    {% if site.pitch == null %}
+    <nav class="site-nav">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+
+      <div class="trigger">
+        {% include nav_menu.html %}
       </div>
-      <ul id="slide-out" class="side-nav fixed">
-        <li>
-          <div class="userView">
-            <div class="background"></div>
-            <a href="{{site.github_profile}}" target="_blank"><img class="circle z-depth-2" src="{{site.baseurl}}/assets/res/user.png"></a>
-            <span class="white-text name">{{site.user}}</span>
-            <span class="white-text email">{{site.user_email}}</span>
-            <div class="social-icons">
-              <a href="mail: cyberglad@gmail.com" class="button button-icon" title="mail: cyberglad@gmail.com">
-  <i class="fa fa-envelope"></i>
-</a>
+    </nav>
+    {% endif %}
+    </div>
 
-<a href="https://facebook.com/yuri.gladkov" class="button button-icon" title="facebook: yuri.gladkov">
-  <i class="fa fa-facebook-square"></i>
-</a>
+    {% assign nblangs = site.langs | size %}
+    {% if nblangs > 1 %}
+      {% include _i18n/lang_selector.html %}
+    {% endif %}
 
-<a href="https://twitter.com/cyberglad" class="button button-icon" title="twitter: @cyberglad">
-  <i class="fa fa-twitter-square"></i>
-</a>
+  </div>
 
-<a href="https://github.com/cyberglad" class="button button-icon" title="github: cyberglad">
-  <i class="fa fa-github-square"></i>
-</a>
-
-<a href="https://www.linkedin.com/in/yuri-gladkov" class="button button-icon" title="linkedin: yuri-gladkov">
-  <i class="fa fa-linkedin-square"></i>
-</a>
-
-<!-- <a href="https://jtom.me/feed/blog.xml" title="Subscribe to Blog RSS feed">
-  <i class="fa fa-rss-square"></i>
-</a>
- -->
-
-            </div>
-          </div>
-        </li>
-          {% assign pages=site.pages | where:"lang", page.lang %}
-          {% assign mypages=site.pages | where:"lang", page.lang %}
-       {% for page in pages %}
-    {% if page.title contains "Welcome"%}
-      {{ mypages[0]=page }}
-      {% else if page.title contains "Contact"%}
-      {{ mypages[1]=page  }}
-      {% else if page.title contains "Projects"%}
-      {{ mypages[3]=page  }}
-      {% else if page.title contains "CV"%}
-      {{ mypages[4]=page  }}
-      {% endif %}
-     {% endfor %}
-       {% for menu in site.t[page.lang] %}
-       {% assign loopindex = forloop.index %}
-       {% if loopindex == 1 %}
-       <li><a class="waves-effect"  href="{{ menu[1].url }}"><i class="material-icons">home</i>{{ menu[1].name }}</a></li>
-       {% endif %}
-       {% if loopindex == 2 %}
-       <li><a class="waves-effect"  href="{{ menu[1].url }}"><i class="material-icons">description</i>{{ menu[1].name }}</a></li>
-       {% endif %}
-       {% if loopindex == 3 %}
-       <li><a class="waves-effect"  href="{{ menu[1].url }}"><i class="material-icons">sort</i>{{ menu[1].name }}</a></li>
-       {% endif %}
-       {% if loopindex == 4 %}
-       <li><a class="waves-effect"  href="{{ menu[1].url }}"><i class="material-icons">label</i>{{ menu[1].name }}</a></li>
-       {% endif %}
-       {% if loopindex == 5 %}
-       <li><a class="waves-effect"  href="{{ menu[1].url }}"><i class="material-icons">person</i>{{ menu[1].name }}</a></li>
-       {% endif %}
-       {% endfor %}
-      </ul>
-    </header>
-    <main>
+</header>
