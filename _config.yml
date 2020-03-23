@@ -1,38 +1,10 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title_html: "<b>yuri</b>gladkov"
-description: > # this means to ignore newlines until "baseurl:"
-pitch: CV and personal blog
-nb_posts_page: 5
-email: cyberglad@gmail.com
-shortbio: I am a Senior Java Developer @Swisscom
-twitter_username: cyberglad
-github_username: cyberglad
-linkedin_username: yurigladkov
-langs: ["fr", "en"]
-defaults:
-  - scope:
-      path: ""
-    values:
-      lang: "fr"
-title: Personal site of Yuri Gladkov
-author: cyberglad
-email: cyberglad@gmail.com
+title: Your awesome title
+author: GitHub User
+email: your-email@domain.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  CV and personal blog
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
@@ -82,4 +54,3 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
 #  - jekyll-feed
-=======
