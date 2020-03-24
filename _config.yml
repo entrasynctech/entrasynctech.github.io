@@ -11,7 +11,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Yuri Gladkov
-  tagline: Java Fullstack
+  tagline: Senior Java Developer
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
@@ -24,7 +24,7 @@ plainwhite:
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
-    # instagram: jekyll
+    instagram: cyberglad
     # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
