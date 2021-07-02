@@ -20,14 +20,13 @@ plainwhite:
 
   # generate social links in footer
   social_links:
-    facebook: https://www.facebook.com/yuri.gladkov.7
+    facebook: yuri.gladkov.7
     instagram: yuriguitarist
-    youtube: https://www.youtube.com/channel/UCGmCD0OyWAoqGAjJEfLHIIA
+    youtube: UCGmCD0OyWAoqGAjJEfLHIIA
     rss: rss
     # dribbble: jekyll
     # facebook: https://www.facebook.com/yuri.gladkov.7
     # flickr:   jekyll
-    instagram: cyberglad
     # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
