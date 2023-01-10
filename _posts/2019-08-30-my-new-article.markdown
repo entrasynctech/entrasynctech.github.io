@@ -4,10 +4,8 @@ title:  "Talend"
 date:   2019-03-28 21:03:36 +0530
 categories: Talend Java
 ---
-Best practices include:
-Use a standard Job layout to ensure its readability, it is particularly useful for collaborative work.
-Some examples include: putting data flows from left to right, top-to-bottom layout to show the process flow between subJobs, target components on the right, etc.
-
+This is one of my older posts
+Let's see if it works
 tMap variables are processed in order (from top to bottom)
 
 
