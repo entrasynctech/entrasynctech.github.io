@@ -10,8 +10,8 @@ show_excerpts: true # set to true to show excerpts on the homepage
 sass:
   sass_dir: _sass
 plainwhite:
-  name: Cyberglad
-  tagline: Music, Tabs and more
+  name: Yuri Gladkov
+  tagline: Senior Devops (Fullstack, React, Java, Python, Ansible, Docker, Testing)
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   navigation:
