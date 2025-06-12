@@ -11,7 +11,7 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Yuri Gladkov
-  tagline: Senior Devops (Fullstack, React, Java, Python, Ansible, Docker, Testing)
+  tagline: Senior Devops
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   navigation:
