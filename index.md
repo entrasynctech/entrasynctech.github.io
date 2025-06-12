@@ -8,10 +8,9 @@ layout: page
 **Specialized in Identity & Access Management, DevOps, Testing, and Security**
 
 📍 Morges, Vaud, Switzerland  
-📞 +41 79 101 39 17  
 📧 cyberglad@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/yuri-gladkov) | [Facebook](https://www.facebook.com/yuri.gladkov) | [Personal Blog](https://ygladkov.wordpress.com)  
-🏢 [Unilabs](https://www.unilabs.ch)
+🔗 [LinkedIn](https://www.linkedin.com/in/yuri-gladkov) | [Facebook](https://www.facebook.com/yuri.gladkov) | [Personal Blog](https://www.youtube.com/@yuri-guitarist)  
+🏢 [Swisscom](https://www.swisscom.ch)
 
 ---
 
